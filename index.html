@@ -1,9 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Welcome</title>
-    </head>
-    <body>
-        <p>Hello world!</p>
-    </body>
+
+<head>
+    <title>aMusic</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<!-- HEADER -->
+    <div id="HEADER">
+        <img src="MEDIA/logoAmusic.png" height="120px" />
+        <br>
+        <div class="navButton" id="home">HOME</div>
+        <div class="navButton" id="music">MUSIC</div>
+        <div class="navButton" id="play">PLAY</div>
+        <div class="navButton" id="about">ABOUT</div>
+    </div>
+
+	<!-- CONTENT -->
+    <div id="CONTENT">
+
+        <div id="HOMEGROUP">
+            <ul>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+            </ul>
+        </div>
+		<div id="HOMEGROUP">
+            <ul>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+            </ul>
+        </div>
+		<div id="HOMEGROUP">
+            <ul>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+            </ul>
+        </div>
+		<div id="HOMEGROUP">
+            <ul>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+            </ul>
+        </div>
+
+        <div id="HOMEGROUP">
+            <ul>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+                <li>
+                    <img src="MEDIA/clock.png" />
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+	<!-- FOOTER -->
+    <div id="FOOT">
+		<a id="PlayLinePLAY" class="playIcon" onclick="playMusic();"></a>
+		<a id="PlayLinePAUSE" class="" onclick="pauseMusic();"></a>
+		<audio id="musicPlayer"> <source src="music/song1.mp3" type="audio/mpeg"></audio>
+		<input id="musicTimeline" class="PlayLineLINE" type="range" value="0">
+		<a id="timeLine" class="timeSong" >0:00 / 0: 00</a>
+    </div>
+	
+	<script src="JS/app.js"></script>
+</body>
+
 </html>
